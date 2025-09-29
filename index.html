@@ -1,225 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atypical Marketing</title>
-  
-  <!-- Importando fontes do Google como alternativas -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora&display=swap" rel="stylesheet">
-
   <style>
-    :root {
-      --cor-principal: #6b1d1d; /* Bordô aproximado */
-      --cor-clara: #fdfaf7;     /* Fundo claro/bege */
-      --cor-texto: #2a2a2a;
-    }
-
     body {
+      font-family: 'Longway', sans-serif; /* conforme manual de marca */
       margin: 0;
       padding: 0;
-      font-family: 'Lora', serif; /* alternativa elegante à Anchorage */
-      background: var(--cor-clara);
-      color: var(--cor-texto);
+      background-color: #0D0D0D; /* fundo escuro */
+      color: #FFFFFF;
+      text-align: center;
     }
-
     header {
-      background: var(--cor-principal);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
+      padding: 40px 20px;
     }
-
     header h1 {
+      font-family: 'Boston Angel', serif;
+      font-size: 3rem;
       margin: 0;
-      font-family: 'Playfair Display', serif; /* alternativa à Longway */
-      font-size: 2rem;
-      font-weight: 700;
+      color: #FFD700; /* destaque da paleta */
     }
-
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #CCCCCC;
+    }
     section {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-      text-align: center;
+      padding: 40px 20px;
     }
-
-    section h2 {
-      font-family: 'Playfair Display', serif; /* alternativa à Boston Angel */
-      font-size: 1.5rem;
+    h2 {
+      font-size: 2rem;
+      color: #FFD700;
       margin-bottom: 20px;
-      color: var(--cor-principal);
     }
-
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    ul li::before {
+      content: "✔️ ";
+    }
     form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      text-align: left;
+      background: #1A1A1A;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 20px auto;
     }
-
-    input, textarea {
-      padding: 14px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-      font-family: 'Lora', serif;
-    }
-
-    button {
-      padding: 14px;
-      background: var(--cor-principal);
-      color: #fff;
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
       border: none;
-      border-radius: 8px;
-      font-size: 16px;
+      border-radius: 5px;
+    }
+    input, textarea {
+      background: #2B2B2B;
+      color: #FFF;
+    }
+    button {
+      background: #FFD700;
+      color: #0D0D0D;
       font-weight: bold;
       cursor: pointer;
       transition: 0.3s;
     }
-
     button:hover {
-      background: #4a1414;
+      background: #FFA500;
     }
-
     footer {
-      background: var(--cor-principal);
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      font-size: 14px;
+      padding: 20px;
+      background: #0A0A0A;
+      font-size: 0.9rem;
+      color: #AAAAAA;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Um jeito diferente de conectar seu negócio ao mundo</h1>
+    <h1>Atypical Marketing</h1>
+    <p><em>Um jeito diferente de conectar o seu negócio ao mundo</em></p>
   </header>
 
   <section>
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>Gestão de Redes Sociais</li>
+      <li>Mentorias Personalizadas</li>
+      <li>Tráfego Pago (Meta Ads e Google Ads)</li>
+      <li>Planejamento Estratégico</li>
+      <li>Redação e Copywriting</li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Fale com a gente</h2>
-    <form action="https://formsubmit.co/SEU-EMAIL" method="POST">
-      <input type="text" name="name" placeholder="Seu nome" required>
-      <input type="text" name="whatsapp" placeholder="Seu WhatsApp" required>
-      <input type="text" name="empresa" placeholder="Nome da sua empresa" required>
-      <textarea name="busca" rows="5" placeholder="O que você busca no momento?" required></textarea>
-
-      <!-- Config extra -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="4" placeholder="Conte um pouco sobre o seu projeto"></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <footer>
-    <p>© 2025 Atypical Marketing</p>
-  </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Obrigado - Atypical Marketing</title>
-  
-  <!-- Fontes elegantes -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --cor-principal: #6b1d1d; /* Bordô */
-      --cor-clara: #fdfaf7;     /* Fundo claro */
-      --cor-texto: #2a2a2a;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Lora', serif;
-      background: var(--cor-clara);
-      color: var(--cor-texto);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background: var(--cor-principal);
-      color: #fff;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      font-weight: 700;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    main h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: var(--cor-principal);
-    }
-
-    main p {
-      max-width: 500px;
-      margin-bottom: 30px;
-    }
-
-    a {
-      display: inline-block;
-      padding: 14px 24px;
-      background: var(--cor-principal);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    a:hover {
-      background: #4a1414;
-    }
-
-    footer {
-      background: var(--cor-principal);
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Atypical Marketing</h1>
-  </header>
-
-  <main>
-    <h2>Obrigada pelo seu contato! 💜</h2>
-    <p>Recebemos sua mensagem e em breve entraremos em contato para entender melhor como podemos ajudar o seu negócio a se conectar com o mundo de um jeito diferente.</p>
-    <a href="index.html">Voltar ao site</a>
-  </main>
+  <section>
+    <h2>Siga no Instagram</h2>
+    <!-- Gadget do Instagram -->
+    <iframe src="https://www.instagram.com/atypicalmarketing/embed" 
+            width="340" height="500" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  </section>
 
   <footer>
-    <p>© 2025 Atypical Marketing</p>
+    <p>&copy; 2025 Atypical Marketing. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
