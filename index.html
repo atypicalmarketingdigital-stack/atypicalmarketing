@@ -3,10 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página com Logo</title>
+  <title>Página com Logo e Fundo</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #791A2C; /
+      background: url('https://i.ibb.co/wFPDYtwT/Screenshot-1.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.5); /* leve transparência no fundo do topo */
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 200px; /* tamanho do logo */
+      height: auto;
+    }
+
+    main {
+      padding: 50px 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.ibb.co/wFPDYtwT/Screenshot-1.png" alt="Logo">
+  </header>
+
+  <main>
+    <h1>Bem-vindo à Página</h1>
+    <p>Este é um exemplo com logotipo no topo e imagem de fundo.</p>
+  </main>
+</body>
+</html>
