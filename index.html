@@ -1,121 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atypical Marketing</title>
+  <title>Página com Logo e Fundo</title>
   <style>
     body {
-      font-family: 'Longway', sans-serif; /* conforme manual de marca */
       margin: 0;
-      padding: 0;
-      background-color: #6A2E3A; /* fundo bordô */
-      color: #F9E3D7; /* texto claro */
+      font-family: Arial, sans-serif;
       text-align: center;
+      background: url('https://i.ibb.co/wFPDYtwT/Screenshot-1.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
     }
+
     header {
-      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.5); /* leve transparência no fundo do topo */
+      padding: 20px;
     }
-    .logo {
-      max-width: 220px; /* ajuste conforme necessário */
+
+    header img {
+      max-width: 200px; /* tamanho do logo */
       height: auto;
     }
-    section {
-      padding: 40px 20px;
-    }
-    h2 {
-      font-size: 2rem;
-      color: #D8B6A4;
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-    ul li::before {
-      content: "✔️ ";
-      color: #B97C7A;
-    }
-    form {
-      background: #8B3E4D; /* fundo da caixa */
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
-      margin: 20px auto;
-    }
-    input, textarea, button {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    input, textarea {
-      background: #B97C7A; /* rosa queimado */
-      color: #F9E3D7;
-    }
-    input::placeholder, textarea::placeholder {
-      color: #F9E3D7;
-    }
-    button {
-      background: #D8B6A4;
-      color: #6A2E3A;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #B97C7A;
-      color: #F9E3D7;
-    }
-    footer {
-      padding: 20px;
-      background: #8B3E4D;
-      font-size: 0.9rem;
-      color: #F9E3D7;
+
+    main {
+      padding: 50px 20px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="https://drive.google.com/uc?export=view&id=1lAedy0B-97xQ1LuQ9V0pqdQEjTZxQgyN" 
-         alt="Atypical Marketing" class="logo">
+    <img src="https://i.ibb.co/wFPDYtwT/Screenshot-1.png" alt="Logo">
   </header>
 
-  <section>
-    <h2>Nossos Serviços</h2>
-    <ul>
-      <li>Gestão de Redes Sociais</li>
-      <li>Mentorias Personalizadas</li>
-      <li>Tráfego Pago (Meta Ads e Google Ads)</li>
-      <li>Planejamento Estratégico</li>
-      <li>Redação e Copywriting</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Fale com a gente</h2>
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea rows="4" placeholder="Conte um pouco sobre o seu projeto"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <section>
-    <h2>Siga no Instagram</h2>
-    <iframe src="https://www.instagram.com/atypicalmarketing/embed" 
-            width="340" height="500" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Atypical Marketing. Todos os direitos reservados.</p>
-  </footer>
-
+  <main>
+    <h1>Bem-vindo à Página</h1>
+    <p>Este é um exemplo com logotipo no topo e imagem de fundo.</p>
+  </main>
 </body>
 </html>
